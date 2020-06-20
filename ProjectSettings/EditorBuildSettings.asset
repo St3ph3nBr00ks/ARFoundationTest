@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/DieselDisplays/Scenes/DD_DemoScene.unity
+    guid: a184c74a31bf6a74d8122fd221b0d85b
   - enabled: 0
     path: Assets/Scenes/ARCollaborationData/ARCollaborationDataExample.unity
     guid: 900e7bfe6122645fba71b90941afb9c5
@@ -59,7 +62,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/HumanSegmentation/HumanSegmentationImages.unity
     guid: ed5207d50697d40d688249cd6c59608b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ImageTracking/ImageTracking.unity
     guid: e0b018a3c3b5cfd4c8e316706ec0a18c
   - enabled: 0
