@@ -27,7 +27,7 @@ public class DD_ARObjectPresentation : MonoBehaviour
             transform.localEulerAngles = Vector3.zero;
         }
 
-        if (FindObjectOfType<DD_Debug>().debugText)
+        if (FindObjectOfType<DD_Debug>() && FindObjectOfType<DD_Debug>().debugText)
         {
             FindObjectOfType<DD_Debug>().debugText.text =
                 "transform.eulerAngles.x : " + referenceObj.eulerAngles.x + "\n" + " " +

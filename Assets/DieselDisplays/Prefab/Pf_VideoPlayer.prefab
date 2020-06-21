@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 8657330803475647752}
   - component: {fileID: 855140523852682045}
   - component: {fileID: 9169142386245447480}
+  - component: {fileID: 6947326841089245292}
   m_Layer: 0
   m_Name: Pf_VideoPlayer
   m_TagString: Untagged
@@ -664,7 +665,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &3319322829091837769
@@ -725,6 +726,20 @@ MonoBehaviour:
   horzPresentationObjs:
   - {fileID: 1989307048}
   vertPresentationObjs: []
+--- !u!114 &6947326841089245292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041205083515962569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4e305b5e3589949ad46a8d8af8a95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 5240464285490335186}
+  openUrl: https://www.dieseldisplays.com/
 --- !u!1 &2081119082893688695
 GameObject:
   m_ObjectHideFlags: 0

@@ -260,6 +260,20 @@ Transform:
   m_Father: {fileID: 3312728602301253200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8959078537559977732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375401396964431871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4e305b5e3589949ad46a8d8af8a95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 2364786211917471460}
+  openUrl: https://www.dieseldisplays.com/
 --- !u!1 &9171054280224807535
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,9 +447,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e68fafe55ab01e479eeb9857758b1e5, type: 3}
+--- !u!1 &8375401396964431871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2041205083515962569, guid: 8e68fafe55ab01e479eeb9857758b1e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7523463320612950838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6375083195396896678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3463389492627465360, guid: 8e68fafe55ab01e479eeb9857758b1e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 7523463320612950838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &2364786211917471460 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 5240464285490335186, guid: 8e68fafe55ab01e479eeb9857758b1e5,
     type: 3}
   m_PrefabInstance: {fileID: 7523463320612950838}
   m_PrefabAsset: {fileID: 0}
