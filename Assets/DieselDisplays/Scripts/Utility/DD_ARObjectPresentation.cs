@@ -5,7 +5,9 @@ using UnityEngine;
 public class DD_ARObjectPresentation : MonoBehaviour
 {
     public Transform referenceObj;
-    
+
+    public Transform yRotRef;
+
     public Vector3 horzPresentationRot;
     public Vector3 vertPresentationRot;
 
@@ -15,16 +17,23 @@ public class DD_ARObjectPresentation : MonoBehaviour
         if (Mathf.Abs(referenceObj.eulerAngles.x) < 45 || 300 < Mathf.Abs(referenceObj.eulerAngles.x))
         {
             transform.localEulerAngles = horzPresentationRot;
+            //transform.localEulerAngles = new Vector3(horzPresentationRot.x, yRotRef.localEulerAngles.y, horzPresentationRot.z);
+
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotRef.eulerAngles.y, transform.eulerAngles.z);
         }
         // If target image is standing up (vertical)
         else if (45 < Mathf.Abs(referenceObj.eulerAngles.x) && Mathf.Abs(referenceObj.eulerAngles.x) < 300)
         {
-
             transform.localEulerAngles = vertPresentationRot;
+            //transform.localEulerAngles = new Vector3(vertPresentationRot.x, yRotRef.localEulerAngles.y, vertPresentationRot.z);
+
+            //transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotRef.eulerAngles.y, transform.eulerAngles.z);
         }
         else
         {
             transform.localEulerAngles = Vector3.zero;
+
+            //transform.eulerAngles = new Vector3(transform.eulerAngles.x, yRotRef.eulerAngles.y, transform.eulerAngles.z);
         }
 
         if (FindObjectOfType<DD_Debug>() && FindObjectOfType<DD_Debug>().debugText)

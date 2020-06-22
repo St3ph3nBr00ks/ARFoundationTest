@@ -11,7 +11,7 @@ public class onClickForScaling : MonoBehaviour
         if(Input.GetMouseButton(0) || Input.GetMouseButton(1))
         for (int i = 0; i < objsToScale.Count; i++)
         {
-            Debug.Log("scale " + objsToScale[i]);
+           //Debug.Log("scale " + objsToScale[i]);
             CSharpscaling.Instance.Scale(objsToScale[i]);
         }
 	}

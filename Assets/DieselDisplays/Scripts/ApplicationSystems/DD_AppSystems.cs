@@ -13,12 +13,17 @@ public class DD_AppSystems : MonoBehaviour
 
         for (int i = 0; i < allARObjects.Length; i++)
         {
-            allARObjects[i].gameObject.SetActive(false);
+            //allARObjects[i].gameObject.SetActive(false);
+            Destroy(allARObjects[i].gameObject);
         }
+
+        allARObjects = null;
     }
 
     public void ResetScene()
     {
+        DisableAllArObjects();
+
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
