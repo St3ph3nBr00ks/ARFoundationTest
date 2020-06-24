@@ -54,10 +54,11 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 979052daa7c6e479ba9671bdf2308df9, type: 2}
+  - {fileID: 2100000, guid: 836c41266762f2d4e8fad15713c4d21f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,6 +124,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -203,6 +205,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -392,7 +395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   referenceObj: {fileID: 3463389492627465360}
-  horzPresentationObjs: []
+  horzPresentationObjs:
+  - {fileID: 0}
   vertPresentationObjs: []
 --- !u!114 &6947326841089245292
 MonoBehaviour:
@@ -570,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a872de56a8356c4384278ee46ee0268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceObj: {fileID: 3463389492627465360}
+  referenceObj: {fileID: 0}
   yRotRef: {fileID: 2366050470692053990}
   horzPresentationRot: {x: 0, y: 0, z: 0}
   vertPresentationRot: {x: -90, y: 0, z: 0}
